@@ -3,9 +3,4 @@ build/
 install/
 log/
 
-# IDE and editor folders
-.vscode/
-.idea/
 
-# Ignore Docker persistent storage volumes
-volumes/
