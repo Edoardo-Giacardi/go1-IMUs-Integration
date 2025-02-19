@@ -5,7 +5,7 @@
 # Change these values to use different versions of ROS or different base images.
 BASE_IMAGE=osrf/ros
 BASE_TAG=humble-desktop-full
-IMAGE_NAME=4IMU_I2C
+IMAGE_NAME=4imu_i2c
 IMAGE_TAG=1.0
 USERNAME=ros
 USER_UID="$(id -u $USER)"
