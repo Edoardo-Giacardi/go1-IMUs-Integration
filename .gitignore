@@ -3,18 +3,6 @@ build/
 install/
 log/
 
-# Ignore Python intermediate files
-*.pyc
-__pycache__/
-
-# Ignore temporary files that should not be committed
-*.swp
-*.bak
-*.tmp
-
-# Ignore specific config files that may contain sensitive information
-config.json
-
 # IDE and editor folders
 .vscode/
 .idea/
