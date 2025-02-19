@@ -4,7 +4,7 @@
 set -e
 
 # Define necessary variables directly in the script
-IMAGE="4IMU_I2C"    # Docker image name (should match the one built via docker_buil.bash)
+IMAGE="4imu_i2c"    # Docker image name (should match the one built via docker_buil.bash)
 TAG="1.0"                             # Docker image tag
 CMD_INTERACTIVE="/bin/bash"           # Command to run in interactive mode
 HOSTNAME="localhost"                  # Hostname for the container
