@@ -26,8 +26,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(
-  DIRECTORY bno085_driver
+install(PROGRAMS
+  bno085_driver/four_imus_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
