@@ -28,6 +28,7 @@ endif()
 
 install(PROGRAMS
   bno085_driver/four_imus_publisher.py
+  bno085_driver/new_config.py
   bno085_driver/console_printer.py
   DESTINATION lib/${PROJECT_NAME}
 )
