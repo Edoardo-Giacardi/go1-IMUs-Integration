@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(my_robot_interfaces REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -30,6 +31,7 @@ install(PROGRAMS
   bno085_driver/four_imus_publisher.py
   bno085_driver/new_config.py
   bno085_driver/console_printer.py
+  bno085_driver/4_IMU_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
