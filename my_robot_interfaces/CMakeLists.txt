@@ -28,7 +28,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FourImuData.msg"
-  "msg/four_IMU.msg"
+  "msg/FourIMU.msg"
   "msg/ImuData.msg"
   DEPENDENCIES sensor_msgs std_msgs
 )

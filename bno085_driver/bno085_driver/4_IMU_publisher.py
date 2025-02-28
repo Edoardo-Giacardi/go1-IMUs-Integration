@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 
 # from sensor_msgs.msg import Imu
-from my_robot_interfaces.msg import four_IMU, ImuData
+from my_robot_interfaces.msg import FourIMU, ImuData
 
 import time
 from adafruit_extended_bus import ExtendedI2C as I2C
@@ -42,7 +42,7 @@ class FourImusPublisher(Node):
                 self.get_logger().error(f"Sensor {i+1} init error: {e}")
 
         # Create publisher of type FourImuData
-        self.pub_4imus = self.create_publisher(four_IMU, '/four_imus_data', 10)
+        self.pub_4imus = self.create_publisher(FourIMU, '/four_imus_data', 10)
 
         # Create a timer at 100Hz (0.01s)
         self.timer_period = 0.01  # 100 Hz
@@ -51,7 +51,7 @@ class FourImusPublisher(Node):
         self.get_logger().info("FourImusPublisher node started.")
 
     def publish_imus(self):
-        msg = four_IMU()
+        msg = FourIMU()
 
 
 
