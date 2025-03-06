@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# This publisher is used for the hardware configruation consisting in 4 I2C buses. 
+# For each bus there is only one IMU connected with same i2c address 0x4A
 import rclpy
 from rclpy.node import Node
 

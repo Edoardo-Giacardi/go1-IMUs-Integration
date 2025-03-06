@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-import rclpy
+# This publisher is used for the hardware configruation consisting in 2 I2C buses
+# For each bus there two IMUs connected with different i2c address 0x4A and 0x4B
+# This publisher uses the custom msg for the IMUs
 from rclpy.node import Node
 
 # from sensor_msgs.msg import Imu
