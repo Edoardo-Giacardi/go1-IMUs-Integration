@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/edoardo/Workspace/go1/install/ros2_unitree_legged_msgs/include/**",
+        "/home/edoardo/Workspace/go1/install/my_robot_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/edoardo/Workspace/go1/src/unitree_ros2_to_real/ros2_unitree_legged_real/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

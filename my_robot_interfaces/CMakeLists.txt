@@ -31,6 +31,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FourImuData.msg"
   "msg/FourIMU.msg"
   "msg/ImuData.msg"
+  "msg/TwoIMU.msg"
   DEPENDENCIES sensor_msgs std_msgs geometry_msgs
 )
 
