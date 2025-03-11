@@ -36,6 +36,8 @@ install(PROGRAMS
   bno085_driver/Multi_Thread.py
   bno085_driver/2_IMU_pub_bus1.py
   bno085_driver/2_IMU_pub_bus2.py
+  bno085_driver/tester.py
+  bno085_driver/tester2.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
