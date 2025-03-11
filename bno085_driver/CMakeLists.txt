@@ -33,6 +33,8 @@ install(PROGRAMS
   bno085_driver/new_config.py
   bno085_driver/console_printer.py
   bno085_driver/4_IMU_publisher.py
+  bno085_driver/Multi_Thread.py
+  bno085_driver/2_IMU_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
