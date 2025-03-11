@@ -15,7 +15,7 @@ from adafruit_bno08x import BNO_REPORT_ACCELEROMETER, BNO_REPORT_GYROSCOPE
 
 class Bus2Pub(Node):
     def __init__(self):
-        super().__init__('bus1_imus_pub')
+        super().__init__('bus2_imus_pub')
 
         # Initialize the I2C bus
         self.i2c_bus = I2C(4) # /dev/i2c-4 for sensors 3 & 4
