@@ -28,16 +28,13 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# Install launch files.
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 install(PROGRAMS
-  bno085_driver/four_imus_publisher.py
-  bno085_driver/new_config.py
-  bno085_driver/console_printer.py
-  bno085_driver/4_IMU_publisher.py
-  bno085_driver/Multi_Thread.py
-  bno085_driver/2_IMU_pub_bus1.py
-  bno085_driver/2_IMU_pub_bus2.py
-  bno085_driver/tester.py
-  bno085_driver/tester2.py
   bno085_driver/2_IMU_pub_bus01.py
   bno085_driver/2_IMU_pub_bus23.py
   DESTINATION lib/${PROJECT_NAME}

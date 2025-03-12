@@ -7,7 +7,7 @@ The repository is structured to be cloned into the `src` directory of your go1 R
 ### Contents
 - **ROS 2 Packages**: Two custom ROS 2 packages to handle IMU data processing and message generation.
 - **Dockerfile**: Configuration to build a Docker image suitable for deployment on a Raspberry Pi 5, ensuring a consistent environment for running the ROS 2 nodes.
-- **Scripts**: Python scripts included for additional data processing or setup tasks.
+- **Scripts**: Python scripts included for additional data processing, setup tasks, testing and custom messages.
 
 ## Prerequisites
 - **ROS 2 Installation**: Ensure that ROS 2 Humble is installed on your system. 

@@ -31,21 +31,21 @@ echo "Running container: $CONTAINER_NAME"
 #fi
 
 # Debug: Print the docker command
-echo "docker run -it --rm \
-  --hostname $HOSTNAME \
-  --name $CONTAINER_NAME \
-  --privileged \
-  --device /dev/i2c-0:/dev/i2c-0 \
-  --device /dev/i2c-1:/dev/i2c-1 \
-  --device /dev/i2c-2:/dev/i2c-2 \
-  --device /dev/i2c-3:/dev/i2c-3 \
-  --group-add 994 \
-  --net=host \
-  -e ROS_DOMAIN_ID=10 \
-  -w /home/$USERNAME/$WORKSPACE \
-  -v /dev:/dev \
-  $IMAGE:$TAG \
-  $CMD_INTERACTIVE"
+# echo "docker run -it --rm \
+#   --hostname $HOSTNAME \
+#   --name $CONTAINER_NAME \
+#   --privileged \
+#   --device /dev/i2c-0:/dev/i2c-0 \
+#   --device /dev/i2c-1:/dev/i2c-1 \
+#   --device /dev/i2c-2:/dev/i2c-2 \
+#   --device /dev/i2c-3:/dev/i2c-3 \
+#   --group-add 994 \
+#   --net=host \
+#   -e ROS_DOMAIN_ID=20 \
+#   -w /home/$USERNAME/$WORKSPACE \
+#   -v /dev:/dev \
+#   $IMAGE:$TAG \
+#   $CMD_INTERACTIVE"
   
 # Run docker    
 docker run -it --rm \
@@ -58,7 +58,7 @@ docker run -it --rm \
   --device /dev/i2c-3:/dev/i2c-3 \
   --group-add 994 \
   --net=host \
-  -e ROS_DOMAIN_ID=10 \
+  -e ROS_DOMAIN_ID=20 \
   -w /home/$USERNAME/$WORKSPACE \
   -v /dev:/dev \
   "${IMAGE}:${TAG}" \
