@@ -18,7 +18,7 @@ class Bus2Pub(Node):
         super().__init__('bus2_imus_pub')
 
         # Initialize the I2C bus
-        self.i2c_bus = I2C(4) # /dev/i2c-4 for sensors 3 & 4
+        self.i2c_bus = I2C(0) # /dev/i2c-0 for sensors 3 & 4
 
         # Initialize sensors with different addresses on the same I2C bus
         self.sensors = []
