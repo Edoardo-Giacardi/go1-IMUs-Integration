@@ -38,6 +38,8 @@ install(PROGRAMS
   bno085_driver/2_IMU_pub_bus2.py
   bno085_driver/tester.py
   bno085_driver/tester2.py
+  bno085_driver/2_IMU_pub_bus01.py
+  bno085_driver/2_IMU_pub_bus23.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
