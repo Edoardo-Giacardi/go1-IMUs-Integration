@@ -46,7 +46,7 @@ class Bus01Pub(Node):
         # Create publisher of type TwoImuData
         self.pub_2imus_bus01 = self.create_publisher(TwoIMU, '/two_imus_bus01', 10)
 
-        # Create a timer at ~350Hz 
+        # Create a timer at ~250Hz 
         self.timer_period = 0.004  
         self.timer = self.create_timer(self.timer_period, self.publish_imus)
 

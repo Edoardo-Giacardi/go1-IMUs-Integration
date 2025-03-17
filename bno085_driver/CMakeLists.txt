@@ -37,6 +37,10 @@ install(DIRECTORY
 install(PROGRAMS
   bno085_driver/2_IMU_pub_bus01.py
   bno085_driver/2_IMU_pub_bus23.py
+  bno085_driver/imu1.py
+  bno085_driver/imu2.py
+  bno085_driver/imu3.py
+  bno085_driver/imu4.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
