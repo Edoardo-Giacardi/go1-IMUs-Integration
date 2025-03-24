@@ -78,7 +78,7 @@ class Bus23Pub(Node):
                     msg.imu2 = imu_msg
 
             except Exception as e:
-                self.get_logger().warn(f"Error reading sensor {i+1}: {e}")
+                self.get_logger().warn(f"Error reading sensor {i+3}: {e}")
 
         self.pub_2imus_bus23.publish(msg)
 
