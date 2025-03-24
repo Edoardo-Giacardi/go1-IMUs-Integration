@@ -20,8 +20,8 @@ class Bus23Pub(Node):
 
         # Initialize the two I2C buses
         self.i2c_buses = {
-            2: I2C(2),  # /dev/i2c-2 for sensor 3
-            3: I2C(3),  # /dev/i2c-3 for sensor 4
+            2: I2C(2),  # /dev/i2c-2 for sensor 3 (Rear Left)
+            3: I2C(3),  # /dev/i2c-3 for sensor 4 (Rear Right)
         }
 
         # Initialize sensors 
@@ -31,7 +31,7 @@ class Bus23Pub(Node):
             sensor2 = BNO08X_I2C(self.i2c_buses[3], address=0x4A)
             self.sensors = [sensor1, sensor2]
         except Exception as e:
-            self.get_logger().error(f"Failed to initialize sensor: {e}")
+            self.get_logger().error(f"Failed to initialize sensor {i+3}: {e}")
             return
 
         time.sleep(1)  # Wait a second before enabling features
@@ -41,7 +41,7 @@ class Bus23Pub(Node):
                 sensor.enable_feature(BNO_REPORT_ACCELEROMETER)
                 sensor.enable_feature(BNO_REPORT_GYROSCOPE)
             except RuntimeError as e:
-                self.get_logger().error(f"Sensor {i+1} init error: {e}")
+                self.get_logger().error(f"Sensor {i+3} init error: {e}")
 
         # Create publisher of type TwoImuData
         self.pub_2imus_bus23 = self.create_publisher(TwoIMU, '/two_imus_bus23', 10)
