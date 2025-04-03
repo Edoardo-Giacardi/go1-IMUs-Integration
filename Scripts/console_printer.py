@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from my_robot_interfaces.msg import FourImuData
+from imu_custom_msgs.msg import FourImuData
 
 class ConsolePrinterNode(Node):
     def __init__(self):

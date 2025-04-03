@@ -13,7 +13,7 @@ from adafruit_bno08x import BNO_REPORT_ACCELEROMETER, BNO_REPORT_GYROSCOPE
 #   ImuData imu1
 #   ImuData imu2
 # e un msg "ImuData" con campi standard per accelerazione/vel. angolare.
-from my_robot_interfaces.msg import TwoIMU, ImuData
+from imu_custom_msgs.msg import TwoIMU, ImuData
 
 
 class Bus1ImuPublisher(Node):

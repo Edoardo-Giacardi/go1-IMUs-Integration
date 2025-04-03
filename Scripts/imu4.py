@@ -6,7 +6,7 @@
 import rclpy
 from rclpy.node import Node
 
-from my_robot_interfaces.msg import ImuData
+from imu_custom_msgs.msg import ImuData
 
 import time
 from adafruit_extended_bus import ExtendedI2C as I2C
